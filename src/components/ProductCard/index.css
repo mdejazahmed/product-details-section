@@ -1,4 +1,7 @@
 /* TODO: Add your CSS here */
+*{
+    margin:0;
+}
 
 .product-item {
   display: flex;

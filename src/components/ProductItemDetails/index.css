@@ -2,6 +2,126 @@
 .loaderContainer {
   height: 100vh;
   display: flex;
+  justify-content: center;
+}
+.productDetailsContainer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.productDetailsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .productDetailsWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.productImg {
+  width: 100%;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .productImg {
+    width: 35%;
+    /* height: 100%; */
+  }
+}
+.productDetailsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+.title {
+  font-size: 2rem;
+  color: #616e7c;
+}
+.price {
+  font-size: 1.2rem;
+  color: #171f46;
+}
+.ratingContainer {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  background-color: #3b82f6;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+.reviews {
+  font-size: 1.2rem;
+  color: #171f46;
+  font-weight: bold;
+}
+.desc {
+  font-size: 1.4rem;
+  color: #616e7c;
+}
+.available {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+.stock {
+  font-size: 1.2rem;
+  color: #475569;
+}
+.quantityContainer {
+  display: flex;
+  align-items: center;
+}
+.countBtn {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.productCount {
+  font-size: 1.5rem;
+}
+.addToCartBtn {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  color: white;
+  background-color: #3b82f6;
+}
+
+.failureContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.failImg {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.failHeading {
+  font-size: 2.4rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+.failBtn {
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #3b82f6;
+  color: white;
 }
